@@ -1,0 +1,10 @@
+* tried rolling this with our stack (our Ruby version, postgres db), we'll see if that causes trouble
+* never used the rails generator for gql types before, nice feature. The stricter our conventions around
+    type and resolver implementation, the better.
+* We should think about whether we want a "wide" or "deep" schema: should there be many
+    entry point queries or a small selective group?
+* "Mutations" is a slight misnomer depending on how you look at it:
+    a "mutation" is really any server action other than simply
+    returning data to the client. So, this is typically a request that
+    mutates the underlying data, but something like triggering an external
+    API call would also potentially be a "mutation".
